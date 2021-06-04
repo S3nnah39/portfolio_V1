@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['Akiba haiozi', 'Damu nzito kuliko maji', 'Follow bees and you will get honey', 'Gratitude of a donkey is a kick.', 'Hurry hurry has no blessings','Every door with its own key'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
