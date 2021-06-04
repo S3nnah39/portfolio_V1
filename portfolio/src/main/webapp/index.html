@@ -3,16 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
+      <h1>Tasha Ogoti's Portfolio</h1>
       <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <div>
+        <img src="/images/blkwoman.jpg"/>
+        <p >My name is Tasha Ogoti.
+            <br> A junior student studying Computer Science at the University of Missouri - Columbia.
+            <br> Born and raised in Nairobi, Kenya.
+        </p>
+
+      </div>
+
+      <div id="profiles">
+        <a href="https://www.linkedin.com/in/tasha-ogoti" class="fa fa-linkedin"></a>
+        <a href="https://www.github.com/s3nnah39" class="fa fa-github"></a>
+      </div>
+
+      <p>Click <a href="https://mapmonkey.s3nnah39.repl.co/index.html" target="_blank">here</a> to see content a website I have ever created.</p>
       <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <button onclick="addRandomGreeting()" id="helloBtn">Hello</button>
       <div id="greeting-container"></div>
     </div>
   </body>
