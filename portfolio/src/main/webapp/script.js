@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['You change your life by changing your heart.', "You don't have to be great to get started, but you have to get started to be great.", 'Inauma lakini inabidi uzoe','It is what it is','Pain is temporary, memories are forever' ];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -25,4 +25,6 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+  
+  document.getElementById("btnHello").style.paddingTop='100px';
 }

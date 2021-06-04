@@ -1,3 +1,7 @@
+*{
+  font-family: "Trirong", serif;
+}
+
 #content {
   margin-left: auto;
   margin-right: auto;
@@ -6,4 +10,81 @@
 
 #greeting-container {
   margin-top: 20px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15%;
+    position: absolute;
+    right: 100px;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+#mainWrapper{
+    text-align: center;
+    margin: auto;
+    width: 1128px;
+    padding: 8px;
+    float: left;
+    z-index: -1;
+}
+.mainBody{
+    text-align: justify;
+    box-sizing: content-box;
+    background-color: #062865;
+}
+
+.mainBody:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#left{
+    padding: 18px;
+    margin: 18px;
+    width: 50%;
+    float: left;
+}
+#right{
+    padding: 18px;
+    margin: 18px;
+    float: left;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white; 
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 5px;
+}
+            
+.fa-github {
+    background: black;
+    color: white; 
+    width: 50px;
+    height: 50px;
+    margin: 50px 50px 50px 10px;
+    size: 30px;
+    font-size: 80px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    position: absolute;
+    right: 20px;
+    border-radius: 5px;
+}
+
+#profiles{
+    width: 100%;
 }
