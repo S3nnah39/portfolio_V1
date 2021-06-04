@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>graphite-ruler-294900</googleCloudProjectId>
+    <googleCloudProjectId>togoti-sps-summer21</googleCloudProjectId>
   </properties>
 
   <dependencies>
