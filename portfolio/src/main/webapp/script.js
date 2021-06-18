@@ -17,7 +17,11 @@
  */
 function addRandomGreeting() {
   const greetings =
+<<<<<<< HEAD
       ['Akiba haiozi', 'Damu nzito kuliko maji', 'Follow bees and you will get honey', 'Gratitude of a donkey is a kick.', 'Hurry hurry has no blessings','Every door with its own key'];
+=======
+      ['You change your life by changing your heart.', "You don't have to be great to get started, but you have to get started to be great.", 'Inauma lakini inabidi uzoe','It is what it is','Pain is temporary, memories are forever' ];
+>>>>>>> 70d24ea29d0ec84a29e11ae99170bc20d5ae670d
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -25,4 +29,6 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+  
+  document.getElementById("btnHello").style.paddingTop='100px';
 }
