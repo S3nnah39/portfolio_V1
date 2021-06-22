@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+    <div  class="mainIntro">
+      <div class="navbar">
+        <img src="images/logo.png" class="logo" alt="myLogo">
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="about.html" id="about">About</a></li>
+            <li><a href="projets.html" id="project">Projects</a></li>
+            <li><a href="contact.html" id="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images/menuLogo.png" class="menuLogo" onclick="toggleMenu()" alt="bars">
+      </div>
+    </div>
+
+  <div class="project projectSelected">
+      <h2>College Buddy </h2>
+      <br><br>
+      <span> Developed an application that would assist a college student in striking a balance between their academics and their finances. Built custom object to store personal information that is serialized into a file. Restricted access and control using password encryption, minimizing risk of security breach by 5%. </span>
+      <br><br>
+      <span> Technology Used: Java, JavaFX, Netbeans
+      </span>
+    </div>
+
+
+
+  <div class="project projectSelected">
+      <h2>Mars Explorer </h2>
+      <br><br>
+      <span> Developed a responsive web application that displays images and information on select NASA Mars rovers. The website allows the user to select a martian sol camera and one out of three rovers. Data retrieved from XML files using Ajax is then displayed in a visually appealing manner to enrich knowledge of rovers. </span>
+      <br><br>
+      <span> Technology Used: Brackets, Git, HTML, CSS, Javascript
+      </span>
+    </div>
+
+  <div class="project projectSelected">
+      <h2>Pangani School System </h2>
+      <br><br>
+      <span> Developed a website that would allow faculty and staff for Pangani Primary School to use in student admission. The website allows a user to parse data containing teacher’s information using Ajax to acquire a list of the teachers. Restricted access and control using PHP, minimizing risk of security breach by 5%.</span>
+      <br><br>
+      <span> Technology Used: Brackets, Git, HTML, CSS, Javascript
+      </span>
+    </div>
+
+    <div class="project projectSelected">
+      <h2>Hangman</h2>
+      <br><br>
+      <span> Developed a program that prompts the player for three words. Out of the three, one is chosen, and the user is to attempt to figure the word, one letter at a time. When the guess is incorrect, a stick figure is shown dangling, bit by bit. If the full figure is displayed before the user completes the word, they fail.</span>
+      <br><br>
+      <span> Technology Used: Notepad++, C, Visual Studio 2017
+      </span>
+    </div>
+
+
+
+    <div class="project projectSelected">
+      <h2>Employee Record System</h2>
+      <br><br>
+      <span> Developed a program that would read employee data from a file and populate the provided information into a binary search tree. The program also allows for a user to search for any employee record. </span>
+      <br><br>
+      <span>Technology Used: Notepad++, C, Visual Studio 2017
+      </span>
+    </div>
+
+    <div class="connectMe">
+      <img src="images/github.png" onclick="window.location.assign('https://www.github.com/S3nnah39')" alt="githubLogo">
+      <img src="images/linkedin.png" onclick="window.location.assign('https://www.linkedin.com/in/tasha-ogoti')" alt="linkedinLogo">
+    </div>
+  </body>
+</html>
