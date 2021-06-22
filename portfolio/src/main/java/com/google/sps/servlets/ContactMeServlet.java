@@ -30,7 +30,7 @@ public class ContactMeServlet extends HttpServlet {
     //create Instance
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
 
-    KeyFactory keyFactory = datastore.newKeyFactory().setKind("contact");
+    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Contact");
     FullEntity taskEntity =
         Entity.newBuilder(keyFactory.newKey())
             .set("name", userName)
