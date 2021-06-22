@@ -22,9 +22,9 @@ public class ContactMeServlet extends HttpServlet {
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     
     //Get data from contact me form
-    String userName = Jsoup.clean(request.getParameter("FLname"), Whitelist.none());
-    String userEmail = Jsoup.clean(request.getParameter("emailInfo"), Whitelist.none());
-    String userSMS = Jsoup.clean(request.getParameter("message"), Whitelist.none());
+    String userName = request.getParameter("FLname");
+    String userEmail = request.getParameter("emailInfo");
+    String userSMS = request.getParameter("message");
     String userDate = String.valueOf(new Date().getMonth()) + '\\' + String.valueOf(new Date().getDay()) + "\\" + String.valueOf(new Date().getYear());
 
     //create Instance
