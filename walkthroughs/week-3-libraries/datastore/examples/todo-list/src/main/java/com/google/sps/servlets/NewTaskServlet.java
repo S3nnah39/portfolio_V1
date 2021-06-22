@@ -34,7 +34,8 @@ public class NewTaskServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     // Sanitize user input to remove HTML tags and JavaScript.
-    String title = Jsoup.clean(request.getParameter("title"), Whitelist.none());
+    //String title = Jsoup.clean(request.getParameter("title"), Whitelist.none());
+    String title = request.getParameter("title");
     long timestamp = System.currentTimeMillis();
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
