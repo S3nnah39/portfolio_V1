@@ -8,7 +8,7 @@ import com.google.cloud.datastore.FullEntity;
 import com.google.cloud.datastore.KeyFactory;
 import java.io.IOException;
 import java.util.Date;
-
+import java.util.Calendar;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +25,10 @@ public class ContactMeServlet extends HttpServlet {
     String userName = request.getParameter("FLname");
     String userEmail = request.getParameter("emailInfo");
     String userSMS = request.getParameter("message");
-    String userDate = String.valueOf(new Date().getMonth()) + '\\' + String.valueOf(new Date().getDay()) + "\\" + String.valueOf(new Date().getYear());
+    Date date = new Date();
+    Calendar cal = Calendar.getInstance();
+    cal.setTime(date);
+    String userDate = String.valueOf(cal.get(Calendar.MONTH)) + '\\' + String.valueOf(cal.get(Calendar.DAY_OF_MONTH)) + "\\" + String.valueOf(cal.get(Calendar.YEAR));
 
     //create Instance
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();

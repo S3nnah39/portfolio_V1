@@ -41,3 +41,37 @@ async function getLikes(){
   confetti.render();
 }
 
+async function getContacts(){
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.text();
+
+  const commentContainer = document.getElementById('comment');
+  commentContainer.innerText = textFromResponse;
+
+  var confettiSettings = { target: 'my-canvas' };
+  var confetti = new ConfettiGenerator(confettiSettings);
+  confetti.render();
+}
+function loadContactList(){
+    fetch('/list-contacts').then(response => response.json()).then((contacts) => {
+    const contactListElement = document.getElementById('listOfContacts');
+    contacts.forEach((contact) => {
+      contactListElement.appendChild(createListElement(contact));
+    })
+  });
+
+
+  window.location.assign(contactList.html);
+}
+
+function createListElement(content){
+    const item = document.createElement('li');
+    item.className = 'contact';
+
+    const titleElement = document.createElement('span');
+    titleElement.innerText = content.name + "\n" + content.message;
+
+    item.appendChild(titleElement);
+    return item;
+}
+

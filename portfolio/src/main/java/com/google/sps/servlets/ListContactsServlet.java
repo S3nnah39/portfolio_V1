@@ -14,6 +14,7 @@ import com.google.cloud.datastore.Entity;
 import com.google.cloud.datastore.Query;
 import com.google.cloud.datastore.QueryResults;
 import com.google.cloud.datastore.StructuredQuery.OrderBy;
+import com.google.gson.Gson;
 import com.google.sps.Contact;
 import com.google.cloud.datastore.Datastore;
 
@@ -39,10 +40,10 @@ public class ListContactsServlet extends HttpServlet {
       contacts.add(contact);
     }
 
-    //send the data to be added to the html
-    // ??????
-    // ??????
-    // ??????
+    Gson gson = new Gson();
+
+    response.setContentType("application/json;");
+    response.getWriter().println(gson.toJson(contacts));
   }
 
 
